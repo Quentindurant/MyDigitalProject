@@ -1,0 +1,178 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
+  <diagram name="Diagramme de cas d&#39;utilisation" id="use-case">
+    <mxGraphModel dx="1345" dy="632" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="system" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;" value="" vertex="1">
+          <mxGeometry height="740" width="600" x="280" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="system-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=14;" value="Plateforme Formation MDP" vertex="1">
+          <mxGeometry height="30" width="210" x="460" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-adherent" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Adhérent" vertex="1">
+          <mxGeometry height="60" width="30" x="120" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-adherent-payant" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Adhérent Payant" vertex="1">
+          <mxGeometry height="60" width="30" x="120" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-formateur" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Formateur" vertex="1">
+          <mxGeometry height="60" width="30" x="950" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-admin" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Administrateur" vertex="1">
+          <mxGeometry height="60" width="30" x="950" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-consulter-vitrine" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consulter site vitrine" vertex="1">
+          <mxGeometry height="60" width="140" x="320" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-inscription" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="S&#39;inscrire / Se connecter" vertex="1">
+          <mxGeometry height="60" width="140" x="320" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-profil" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gérer son profil" vertex="1">
+          <mxGeometry height="60" width="140" x="320" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-catalogue" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consulter catalogue formations" vertex="1">
+          <mxGeometry height="60" width="140" x="500" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-abonnement" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="S&#39;abonner via HelloAsso" vertex="1">
+          <mxGeometry height="60" width="140" x="510" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-webinaire" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Accéder aux webinaires" vertex="1">
+          <mxGeometry height="60" width="140" x="310" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-veille" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Configurer veille personnalisée" vertex="1">
+          <mxGeometry height="60" width="140" x="500" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-contact-formateur" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Contacter formateurs" vertex="1">
+          <mxGeometry height="60" width="140" x="500" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-certification" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Télécharger certification" vertex="1">
+          <mxGeometry height="60" width="140" x="310" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-creer-formation" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Créer une formation" vertex="1">
+          <mxGeometry height="60" width="140" x="690" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-calendrier" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gérer calendrier formations" vertex="1">
+          <mxGeometry height="60" width="140" x="680" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-inscriptions" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consulter inscriptions" vertex="1">
+          <mxGeometry height="60" width="140" x="700" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-communication" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Communiquer avec inscrits" vertex="1">
+          <mxGeometry height="60" width="140" x="500" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-sync-helloasso" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Synchroniser HelloAsso" vertex="1">
+          <mxGeometry height="60" width="140" x="700" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-modifier-contenu" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Modifier contenu site" vertex="1">
+          <mxGeometry height="60" width="140" x="700" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-gerer-users" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gérer utilisateurs" vertex="1">
+          <mxGeometry height="60" width="140" x="700" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-adh-vitrine" edge="1" parent="1" source="actor-adherent" style="endArrow=none;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uc-consulter-vitrine" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-adh-inscription" edge="1" parent="1" source="actor-adherent" style="endArrow=none;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uc-inscription" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-adh-profil" edge="1" parent="1" source="actor-adherent" style="endArrow=none;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uc-profil" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-adh-catalogue" edge="1" parent="1" source="actor-adherent" style="endArrow=none;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uc-catalogue" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-adhp-abonnement" edge="1" parent="1" source="actor-adherent-payant" style="endArrow=none;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uc-abonnement" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-adhp-webinaire" edge="1" parent="1" source="actor-adherent-payant" style="endArrow=none;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uc-webinaire" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-adhp-veille" edge="1" parent="1" source="actor-adherent-payant" style="endArrow=none;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uc-veille" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-adhp-contact" edge="1" parent="1" source="actor-adherent-payant" style="endArrow=none;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uc-contact-formateur" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-adhp-certif" edge="1" parent="1" source="actor-adherent-payant" style="endArrow=none;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uc-certification" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-form-creer" edge="1" parent="1" source="actor-formateur" style="endArrow=none;html=1;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uc-creer-formation" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-form-calendrier" edge="1" parent="1" source="actor-formateur" style="endArrow=none;html=1;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uc-calendrier" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-form-inscriptions" edge="1" parent="1" source="actor-formateur" style="endArrow=none;html=1;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uc-inscriptions" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-form-communication" edge="1" parent="1" source="actor-formateur" style="endArrow=none;html=1;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uc-communication" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-admin-sync" edge="1" parent="1" source="actor-admin" style="endArrow=none;html=1;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uc-sync-helloasso" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-admin-contenu" edge="1" parent="1" source="actor-admin" style="endArrow=none;html=1;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uc-modifier-contenu" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-admin-users" edge="1" parent="1" source="actor-admin" style="endArrow=none;html=1;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uc-gerer-users" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-heritage" edge="1" parent="1" source="actor-adherent-payant" style="endArrow=block;html=1;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" target="actor-adherent" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

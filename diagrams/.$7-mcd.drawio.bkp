@@ -1,0 +1,286 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
+  <diagram name="MCD - Modèle Conceptuel de Données" id="mcd-diagram">
+    <mxGraphModel dx="3265" dy="843" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="entity-utilisateur" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#FFFFFF;align=center;verticalAlign=top;fontSize=14;fontStyle=1;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;UTILISATEUR&lt;/font&gt;" vertex="1">
+          <mxGeometry height="200" width="200" x="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="utilisateur-attrs" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=11;spacing=5;strokeColor=#FFFFFF;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;id&lt;br&gt;email&lt;br&gt;nom&lt;br&gt;prenom&lt;br&gt;mot_de_passe&lt;br&gt;role&lt;br&gt;date_inscription&lt;br&gt;statut&lt;br&gt;&lt;br&gt;[MySQL]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="160" width="180" x="110" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="entity-adherent" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#FFFFFF;align=center;verticalAlign=top;fontSize=14;fontStyle=1;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;ADHERENT_PAYANT&lt;/font&gt;" vertex="1">
+          <mxGeometry height="140" width="200" x="100" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="adherent-attrs" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=11;spacing=5;strokeColor=#FFFFFF;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;date_abonnement&lt;br&gt;date_expiration&lt;br&gt;montant_paye&lt;br&gt;statut_abonnement&lt;br&gt;&lt;br&gt;[Hérite de UTILISATEUR]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="180" x="110" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="entity-formateur" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#FFFFFF;align=center;verticalAlign=top;fontSize=14;fontStyle=1;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;FORMATEUR&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="200" x="400" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="formateur-attrs" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=11;spacing=5;strokeColor=#FFFFFF;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;specialite&lt;br&gt;biographie&lt;br&gt;&lt;br&gt;[Hérite de UTILISATEUR]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="180" x="410" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="entity-inscription" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#FFFFFF;align=center;verticalAlign=top;fontSize=14;fontStyle=1;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;INSCRIPTION&lt;/font&gt;" vertex="1">
+          <mxGeometry height="140" width="200" x="700" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="inscription-attrs" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=11;spacing=5;strokeColor=#FFFFFF;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;id&lt;br&gt;date&lt;br&gt;statut&lt;br&gt;presence_confirmee&lt;br&gt;&lt;br&gt;[Airtable]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="180" x="710" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="entity-veille" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#FFFFFF;align=center;verticalAlign=top;fontSize=14;fontStyle=1;" value="&lt;span&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;VEILLE&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="180" width="200" x="290" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="veille-attrs" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=11;spacing=5;strokeColor=#FFFFFF;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;id&lt;br&gt;titre&lt;br&gt;contenu&lt;br&gt;url_source&lt;br&gt;date_publication&lt;br&gt;categorie&lt;br&gt;tags&lt;br&gt;&lt;br&gt;[Airtable]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="140" width="180" x="300" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="entity-transaction" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#FFFFFF;align=center;verticalAlign=top;fontSize=14;fontStyle=1;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;TRANSACTION&lt;/font&gt;" vertex="1">
+          <mxGeometry height="160" width="200" x="460" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="transaction-attrs" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=11;spacing=5;strokeColor=#FFFFFF;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;id&lt;br&gt;montant&lt;br&gt;date_paiement&lt;br&gt;statut&lt;br&gt;methode_paiement&lt;br&gt;&lt;br&gt;[Airtable]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="470" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="heritage-adherent" edge="1" parent="1" source="entity-adherent" style="endArrow=block;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" target="entity-utilisateur" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="200" y="350" as="sourcePoint" />
+            <mxPoint x="250" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="heritage-adherent-label" connectable="0" parent="heritage-adherent" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontStyle=2;strokeColor=#FFFFFF;" value="hérite" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="1" as="geometry">
+            <mxPoint x="-20" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="heritage-formateur" edge="1" parent="1" source="entity-formateur" style="endArrow=block;endFill=0;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" target="entity-utilisateur" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="380" y="160" as="sourcePoint" />
+            <mxPoint x="320" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="heritage-formateur-label" connectable="0" parent="heritage-formateur" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontStyle=2;strokeColor=#FFFFFF;" value="hérite" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-inscrire" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#FFFFFF;fontSize=12;fontStyle=1;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;S&#39;INSCRIRE&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="140" x="420" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-user-inscrire" edge="1" parent="1" source="entity-utilisateur" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" target="rel-inscrire" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="300" y="200" as="sourcePoint" />
+            <mxPoint x="350" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="card-user-inscrire" connectable="0" parent="conn-user-inscrire" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=1;strokeColor=#FFFFFF;" value="1,n" vertex="1">
+          <mxGeometry relative="1" x="-0.6" y="-1" as="geometry">
+            <mxPoint x="-10" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-inscrire-formation" edge="1" parent="1" source="rel-inscrire" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" target="entity-formation" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="560" y="290" as="sourcePoint" />
+            <mxPoint x="700" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="card-formation-inscrire" connectable="0" parent="conn-inscrire-formation" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=1;strokeColor=#FFFFFF;" value="0,n" vertex="1">
+          <mxGeometry relative="1" x="0.6" y="-1" as="geometry">
+            <mxPoint x="10" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-inscrire-inscription" edge="1" parent="1" source="rel-inscrire" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;dashed=1;strokeColor=#FFFFFF;" target="entity-inscription" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490" y="330" as="sourcePoint" />
+            <mxPoint x="800" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="card-inscrire-inscription" connectable="0" parent="conn-inscrire-inscription" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontStyle=2;strokeColor=#FFFFFF;" value="produit" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="1" as="geometry">
+            <mxPoint x="30" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-creer" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#FFFFFF;fontSize=12;fontStyle=1;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;CRÉER&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="640" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-formateur-creer" edge="1" parent="1" source="entity-formateur" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" target="rel-creer" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="600" y="160" as="sourcePoint" />
+            <mxPoint x="570" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="card-formateur-creer" connectable="0" parent="conn-formateur-creer" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=1;strokeColor=#FFFFFF;" value="1,n" vertex="1">
+          <mxGeometry relative="1" x="-0.4" y="-1" as="geometry">
+            <mxPoint x="-5" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-creer-formation" edge="1" parent="1" source="rel-creer" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" target="entity-formation" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="670" y="150" as="sourcePoint" />
+            <mxPoint x="700" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="card-creer-formation" connectable="0" parent="conn-creer-formation" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=1;strokeColor=#FFFFFF;" value="1,1" vertex="1">
+          <mxGeometry relative="1" x="0.4" y="-1" as="geometry">
+            <mxPoint x="5" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-generer" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#FFFFFF;fontSize=12;fontStyle=1;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;GÉNÉRER&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="940" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-inscription-generer" edge="1" parent="1" source="entity-inscription" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" target="rel-generer" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="900" y="470" as="sourcePoint" />
+            <mxPoint x="920" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="card-inscription-generer" connectable="0" parent="conn-inscription-generer" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=1;strokeColor=#FFFFFF;" value="1,1" vertex="1">
+          <mxGeometry relative="1" x="-0.4" y="-1" as="geometry">
+            <mxPoint x="-5" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-generer-certification" edge="1" parent="1" source="rel-generer" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" target="entity-certification" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1020" y="470" as="sourcePoint" />
+            <mxPoint x="1000" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="card-generer-certification" connectable="0" parent="conn-generer-certification" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=1;strokeColor=#FFFFFF;" value="0,1" vertex="1">
+          <mxGeometry relative="1" x="0.4" y="-1" as="geometry">
+            <mxPoint x="5" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-visionner" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#FFFFFF;fontSize=12;fontStyle=1;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;VISIONNER&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="10" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-adherent-visionner" edge="1" parent="1" source="entity-adherent" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" target="rel-visionner" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="200" y="540" as="sourcePoint" />
+            <mxPoint x="200" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="card-adherent-visionner" connectable="0" parent="conn-adherent-visionner" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=1;strokeColor=#FFFFFF;" value="0,n" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="1" as="geometry">
+            <mxPoint x="-20" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-visionner-webinaire" edge="1" parent="1" source="rel-visionner" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" target="entity-webinaire" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="200" y="640" as="sourcePoint" />
+            <mxPoint x="200" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="card-visionner-webinaire" connectable="0" parent="conn-visionner-webinaire" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=1;strokeColor=#FFFFFF;" value="0,n" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="1" as="geometry">
+            <mxPoint x="20" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-configurer" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#FFFFFF;fontSize=12;fontStyle=1;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;CONFIGURER&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-adherent-configurer" edge="1" parent="1" source="entity-adherent" style="endArrow=none;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" target="rel-configurer" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="250" y="540" as="sourcePoint" />
+            <mxPoint x="300" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="card-adherent-configurer" connectable="0" parent="conn-adherent-configurer" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=1;strokeColor=#FFFFFF;" value="1,1" vertex="1">
+          <mxGeometry relative="1" x="-0.3" y="1" as="geometry">
+            <mxPoint x="-10" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-configurer-veille" edge="1" parent="1" source="rel-configurer" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" target="entity-veille" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="420" y="610" as="sourcePoint" />
+            <mxPoint x="500" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="card-configurer-veille" connectable="0" parent="conn-configurer-veille" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=1;strokeColor=#FFFFFF;" value="0,n" vertex="1">
+          <mxGeometry relative="1" x="0.3" y="1" as="geometry">
+            <mxPoint x="5" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-payer" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#FFFFFF;fontSize=12;fontStyle=1;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;PAYER&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="330" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-adherent-payer" edge="1" parent="1" source="entity-adherent" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" target="rel-payer" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="300" y="470" as="sourcePoint" />
+            <mxPoint x="300" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="card-adherent-payer" connectable="0" parent="conn-adherent-payer" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=1;strokeColor=#FFFFFF;" value="1,1" vertex="1">
+          <mxGeometry relative="1" x="-0.4" y="-1" as="geometry">
+            <mxPoint x="-5" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-payer-transaction" edge="1" parent="1" source="rel-payer" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" target="entity-transaction" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="470" as="sourcePoint" />
+            <mxPoint x="400" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="card-payer-transaction" connectable="0" parent="conn-payer-transaction" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=1;strokeColor=#FFFFFF;" value="1,n" vertex="1">
+          <mxGeometry relative="1" x="0.4" y="-1" as="geometry">
+            <mxPoint x="5" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-title" parent="1" style="text;html=1;strokeColor=#FFFFFF;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" value="LÉGENDE" vertex="1">
+          <mxGeometry height="30" width="100" x="1280" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-mysql" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="30" width="60" x="1280" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-mysql-text" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;strokeColor=#FFFFFF;" value="MySQL" vertex="1">
+          <mxGeometry height="30" width="100" x="1350" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-airtable" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="30" width="60" x="1280" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-airtable-text" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;strokeColor=#FFFFFF;" value="Airtable" vertex="1">
+          <mxGeometry height="30" width="100" x="1350" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-heritage" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="30" width="60" x="1280" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-heritage-text" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;strokeColor=#FFFFFF;" value="Héritage" vertex="1">
+          <mxGeometry height="30" width="100" x="1350" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-relation" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="40" width="60" x="1280" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-relation-text" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;strokeColor=#FFFFFF;" value="Association" vertex="1">
+          <mxGeometry height="30" width="100" x="1350" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="notes" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#FFFFFF;align=left;verticalAlign=top;fontSize=11;spacing=10;fontColor=#333333;" value="MODÈLE CONCEPTUEL DE DONNÉES (MCD)&#xa;Méthode MERISE&#xa;&#xa;Cardinalités :&#xa;0,n = zéro à plusieurs&#xa;1,n = un à plusieurs&#xa;1,1 = un et un seul&#xa;0,1 = zéro ou un" vertex="1">
+          <mxGeometry height="150" width="280" x="1300" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="CwP2DTVZ54Jq_e6dryGe-1" connectable="0" parent="1" style="group" value="a" vertex="1">
+          <mxGeometry height="200" width="200" x="780" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="entity-formation" parent="CwP2DTVZ54Jq_e6dryGe-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#FFFFFF;align=center;verticalAlign=top;fontSize=14;fontStyle=1;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;FORMATION&lt;/font&gt;" vertex="1">
+          <mxGeometry height="200" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="formation-attrs" parent="CwP2DTVZ54Jq_e6dryGe-1" style="text;html=1;align=left;verticalAlign=top;fontSize=11;spacing=5;strokeColor=#FFFFFF;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;id&lt;br&gt;titre&lt;br&gt;description&lt;br&gt;duree&lt;br&gt;niveau&lt;br&gt;nb_places&lt;br&gt;dates&lt;br&gt;lieu&lt;br&gt;statut&lt;br&gt;&lt;br&gt;[Airtable]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="160" width="180" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CwP2DTVZ54Jq_e6dryGe-2" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="140" width="200" x="1090" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="entity-certification" parent="CwP2DTVZ54Jq_e6dryGe-2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#FFFFFF;align=center;verticalAlign=top;fontSize=14;fontStyle=1;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;CERTIFICATION&lt;/font&gt;" vertex="1">
+          <mxGeometry height="140" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="certification-attrs" parent="CwP2DTVZ54Jq_e6dryGe-2" style="text;html=1;align=left;verticalAlign=top;fontSize=11;spacing=5;strokeColor=#FFFFFF;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;id&lt;br&gt;date_generation&lt;br&gt;fichier_pdf&lt;br&gt;numero&lt;br&gt;&lt;br&gt;[Airtable]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="180" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CwP2DTVZ54Jq_e6dryGe-3" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="180" width="200" x="-110" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="entity-webinaire" parent="CwP2DTVZ54Jq_e6dryGe-3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#FFFFFF;align=center;verticalAlign=top;fontSize=14;fontStyle=1;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;WEBINAIRE&lt;/font&gt;" vertex="1">
+          <mxGeometry height="180" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="webinaire-attrs" parent="CwP2DTVZ54Jq_e6dryGe-3" style="text;html=1;align=left;verticalAlign=top;fontSize=11;spacing=5;strokeColor=#FFFFFF;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;id&lt;br&gt;titre&lt;br&gt;description&lt;br&gt;url_video&lt;br&gt;duree&lt;br&gt;date_publication&lt;br&gt;categorie&lt;br&gt;&lt;br&gt;[Airtable]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="140" width="180" x="10" y="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
