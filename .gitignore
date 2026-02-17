@@ -1,0 +1,17 @@
+# WordPress
+.env
+wp-config-local.php
+*.log
+
+# Fichiers temporaires
+*.tmp
+*.bak
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
